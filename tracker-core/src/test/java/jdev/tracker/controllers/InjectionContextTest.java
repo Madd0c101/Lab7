@@ -17,26 +17,32 @@ public class InjectionContextTest {
     @Test
     public void gpstest() throws Exception {
         GPSservice gpservice = new GPSservice();
+        assertEquals("GPSservice",gpservice.getClass().getSimpleName().toString());
     }
 
     @Test
     public void queuetest() throws Exception {
         Msgqueueservice queue = new Msgqueueservice();
+        assertEquals("Msgqueueservice",queue.getClass().getSimpleName().toString());
     }
 
     @Test
     public void sendtest() throws Exception {
         Msgsendservice send = new Msgsendservice();
+        assertEquals("Msgsendservice",send.getClass().getSimpleName().toString());
     }
 
     @Test
     public void resptest() throws Exception {
         ResponseTick resp = new ResponseTick();
+        assertEquals("ResponseTick",resp.getClass().getSimpleName().toString());
     }
 
     @Test
     public void schedtest() throws Exception {
         ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
+        assertEquals("ThreadPoolTaskScheduler",scheduler.getClass().getSimpleName().toString());
     }
+
 
 }

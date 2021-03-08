@@ -18,5 +18,6 @@ public class ReqCreateTest {
     public void createTest() throws Exception{
      ReqCreate reqC=new ReqCreate();
         reqC.create();
+        assertEquals("ReqCreate", reqC.getClass().getSimpleName().toString());
     }
 }

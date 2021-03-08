@@ -50,6 +50,7 @@ public class ApplicationTest {
     public void RestTemplate() throws Exception {
         ReqCreate.create();
         RestTemplate result =builder.build();
+        assertEquals("RestRequest", ReqCreate.request.getClass().getSimpleName());
     }
 
 

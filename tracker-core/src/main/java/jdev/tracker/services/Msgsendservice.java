@@ -33,7 +33,7 @@ public class Msgsendservice {
         if (Jform.fromJson()==foo)
         {
             CounterController_TRK.post("bad",request);
-            request.setCoord("conection lost");
+            request.setCoord("connection lost");
         }
         else {
             request.setCoord((current - previous) + " Current coordinate: " + Jform.fromJson());
